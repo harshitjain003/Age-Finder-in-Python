@@ -2,6 +2,9 @@
 from datetime import date
 
 # Let curYear equals to Current Year
-curYear = date.today()
+currDate = date.today()
+currYear = currDate.year
 
-print(curYear)
+user_DOB = int(input("Enter your Birth of Year : "))
+age = currYear - user_DOB
+print("Your Age is", age)
